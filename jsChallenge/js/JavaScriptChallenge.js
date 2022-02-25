@@ -60,12 +60,7 @@ function strictFunction(){
     x = 78.123456;
 }
 
-strictFunction();
-console.log(strictFunction()); /* I am not sure if this last line 
-is correct, but it is the ONLY way I could get any errors in the 
-console log. I tried every example in W3Schools and cleared my cache,
-nothing else displayed an error.*/
-
+document.getElementById('strict').innerHTML = strictFunction();
 
 
 /*Write and execute code that utilizes the this keyword.*/
