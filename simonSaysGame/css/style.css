@@ -1,0 +1,42 @@
+/*Styles go here*/
+
+/** Styles **/
+body{
+    font-family: 'Noto Serif Display', serif;
+    font-size: 2em;
+}
+
+#colors {
+    float: left;
+    overflow: hidden;
+    width: 280px;
+    right: 300px;
+}
+
+#colors li {
+    background-color: #29A0B1;
+    color: black;
+    cursor: auto;
+    font-size: 30px;
+    line-height: 100px;
+    list-style-position: inside;
+    list-style-type: none;
+    height: 100px;
+    float: left;
+    width: 100px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+#colors li.purple { background-color: #8338a1;}
+#colors li.lime { background-color: #9DCC5F;}
+#colors li.pink { background-color: #E56997;}
+#colors li.on { background-color: black;}
+p#start { cursor: pointer; color: blue;}
+p#start:hover { text-decoration: underline;}
+.playing #colors li {
+    cursor: pointer;
+}
+.game-over #colors li {
+    opacity: 0.5;
+}
