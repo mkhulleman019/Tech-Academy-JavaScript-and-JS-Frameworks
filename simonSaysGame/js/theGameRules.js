@@ -20,7 +20,8 @@ $(function() {
         showLightSequence();
     };
     var lightOn = function(no) {
-        colors.eq(gameSequence[no]).addClass("on");
+        colors.eq(gameSequence[no]).fadeOut(1000);
+        colors.eq(gameSequence[no]).fadeIn(1000);
     };
 
     var lightOff = function() {
@@ -51,8 +52,6 @@ $(function() {
         if(gameState == "playing") {
             var selectedSquare = $(this).index();
             var selectedColor = $(this).css("background-color");
-            colors.fadeOut(200);
-            colors.fadeIn(200);
 
             if(gameSequence[clickedNo] == selectedSquare){
                 if(clickedNo == level-1) {
