@@ -1,6 +1,6 @@
 // JavaScript Document
 var catFacts = new XMLHttpRequest();
-catFacts.open('GET', 'https://app.swaggerhub.com/apis-docs/whiterabbit8/meowfacts/1.0.0', true);
+catFacts.open('GET', 'https://catfact.ninja/fact?max_length=140', true);
 catFacts.responseType = 'text';
 catFacts.send();
 var cfResponse;
@@ -10,7 +10,7 @@ catFacts.onload = function() {
         var cfResponse = JSON.parse(catFacts.responseText);
         console.log(cfResponse);
 
-        document.getElementById("catFact").innerHTML = cfResponse[0].data;
+        document.getElementById("catFact").innerHTML = cfResponse.fact;
     }
 }
 
